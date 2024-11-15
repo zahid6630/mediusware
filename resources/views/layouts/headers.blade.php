@@ -29,7 +29,7 @@
 
                 <li>
                     <a href="{{ route('transactions_index') }}" class="waves-effect">
-                        <i class="fa fa-money"></i>
+                        <i class="fa fa-list"></i>
                         <span>Transactions</span>
                     </a>
                 </li>
