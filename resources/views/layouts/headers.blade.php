@@ -11,7 +11,6 @@
                     </a>
                 </li>
 
-
                 <li>
                     <a class="has-arrow waves-effect">
                         <i class="fas fa-users"></i><span>Users</span>
@@ -28,6 +27,12 @@
                     </ul>
                 </li>
 
+                <li>
+                    <a href="{{ route('transactions_index') }}" class="waves-effect">
+                        <i class="fa fa-money"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

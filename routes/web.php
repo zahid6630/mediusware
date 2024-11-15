@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,8 +28,13 @@ Route::prefix('users')->group(function() {
     Route::get('/', [UsersController::class, 'index'])->name('users_index');
     Route::get('/create', [UsersController::class, 'create'])->name('users_create');
     Route::post('/store', [UsersController::class, 'store'])->name('users_store');
-    Route::get('/edit/{id}', [UsersController::class, 'edit'])->name('users_edit');
-    Route::post('/update/{id}', [UsersController::class, 'update'])->name('users_update');
+    Route::get('/user-list-load', [UsersController::class, 'userListLoad']);
+});
+
+Route::prefix('transactions')->group(function() {
+    Route::get('/', [TransactionsController::class, 'index'])->name('transactions_index');
+    Route::get('/create', [TransactionsController::class, 'create'])->name('transactions_create');
+    Route::post('/store', [TransactionsController::class, 'store'])->name('transactions_store');
 });
 
 require __DIR__.'/auth.php';

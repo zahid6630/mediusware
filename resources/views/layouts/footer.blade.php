@@ -6,7 +6,7 @@
             
             <div class="col-sm-10">
                 <div class="text-sm-right d-none d-sm-block blackColor">
-                   ©{{ date('Y') }} Design & Developed By | <a href="https://rootsoftbd.com/" target="_blank">Root Soft Bangladesh</a> | Contact : 01905111957
+                   ©{{ date('Y') }} Design & Developed By | <a href="https://kbmzahidhasan.dev/" target="_blank">K B M Zahid Hasan</a> | Contact : 01905111957
                 </div>
             </div>
         </div>
