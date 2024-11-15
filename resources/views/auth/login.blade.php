@@ -13,7 +13,7 @@
     <link href="{{ url('/public/login_form_assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet" />
 
     <!-- loader-->
-    <link href="{{ url('/assets/login_form_assets/css/pace.min.css') }}" rel="stylesheet" />
+    <link href="{{ url('/public/login_form_assets/css/pace.min.css') }}" rel="stylesheet" />
     <script src="{{ url('/public/login_form_assets/js/pace.min.js') }}"></script>
 
     <!-- Bootstrap CSS -->

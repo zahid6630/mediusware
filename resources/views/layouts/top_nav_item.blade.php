@@ -7,10 +7,7 @@
                         <!-- <img style="width: 40;height: 30px;margin-top: 15px" src="" alt=""> -->
                     </span>
                     <span class="logo-lg">
-                        @if(companyInfo()->header_logo != null)
-                        <img style="width: 50px;height: 50px;margin-top: 15px" src="{{ url('assets/images/'.companyInfo()->header_logo) }}" alt="">
-                        @else
-                        @endif
+                        <img style="width: 50px;height: 50px;margin-top: 15px" src="" alt="">
                     </span>
                 </a>
             </div>
@@ -22,25 +19,14 @@
 
         <div class="d-flex">
             <div class="dropdown d-inline-block">
-                <a href="" class="notification">
-                  <span style="padding-right: 20px"><blink>New</blink></span>
-                  <span class="badge">0</span>
-                </a>
-                
                 <button style="font-size: 0.8125rem !important" type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    @if(userInfo()['userInfo']->photo != null)
-                    <img class="rounded-circle header-profile-user" src="{{ url('assets/images/'. userInfo()['userInfo']->photo) }}"
+                    <img class="rounded-circle header-profile-user" src=""
                         alt="Header Avatar">
-                    @else
-                    <img class="rounded-circle header-profile-user" src="{{ url('assets/default.png') }}"
-                        alt="Header Avatar">
-                    @endif
-                    <span class="d-none d-xl-inline-block ml-1">{{ userInfo()['userInfo']->name }}</span>
+                    <span class="d-none d-xl-inline-block ml-1">{{ Auth()->user()->name }}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="{{ route('users_edit_profile') }}"><i class="bx bx-user-circle font-size-16 align-middle mr-1"></i> Profile</a>
                     
                     <a class="dropdown-item text-danger" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
