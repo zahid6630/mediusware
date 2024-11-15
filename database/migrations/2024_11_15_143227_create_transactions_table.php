@@ -15,7 +15,8 @@ return new class extends Migration
             $table->bigIncrements('id')->unsigned();
             $table->bigInteger('user_id')->unsigned();
             $table->enum('transaction_type', [1,2])->comment('1=Deposit, 2=Withdrawal');
-            $table->decimal('amount', 10, 2)->default(0);
+            $table->double('amount')->default(0);
+            $table->decimal('fee', 10, 2)->default(0);
             $table->date('date');
             $table->timestamps();
         });

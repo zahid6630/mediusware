@@ -30,7 +30,7 @@
             					{{ csrf_field() }}
 
             						<div class="row">
-                                        <div class="col-sm-2">
+                                        <div class="col-sm-3">
                                             <div class="form-group">
                                                 <label class="control-label">Transaction Type</label>
                                                 <select style="width: 100%;cursor: pointer;" class="form-control select2" name="transaction_type" required>
@@ -40,14 +40,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-2">
-                                            <div class="form-group">
-                                                <label class="control-label">Date *</label>
-                                                <input id="date" name="date" type="text" value="{{ date('d-m-Y') }}" class="form-control" data-provide="datepicker"  data-date-format="dd-mm-yyyy" data-date-autoclose="true" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="coupon_code">User *</label>
                                                 <select style="width: 100%;cursor: pointer;" class="form-control select2 loadUser" name="user_id" required>
